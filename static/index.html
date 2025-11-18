@@ -1,0 +1,49 @@
+cat > static/index.html << 'EOF'
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitora SUS - API</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 40px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2e7d32; }
+        .api-info { background: #e8f4fd; padding: 20px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Monitora SUS API</h1>
+        <p>Backend está funcionando corretamente!</p>
+        
+        <div class="api-info">
+            <h3>📋 Endpoints disponíveis:</h3>
+            <ul>
+                <li><a href="/docs">/docs</a> - Documentação interativa da API</li>
+                <li><a href="/redoc">/redoc</a> - Documentação alternativa</li>
+                <li><strong>POST</strong> /api/v1/token/login - Autenticação de usuários</li>
+                <li><strong>GET</strong> /health - Status da API</li>
+            </ul>
+        </div>
+
+        <h3>🔗 Links úteis:</h3>
+        <ul>
+            <li><a href="http://localhost:5173" target="_blank">Frontend React</a></li>
+            <li><a href="/static/">Arquivos estáticos</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+EOF
